@@ -31,48 +31,59 @@
         <!-- Title of Document -->
     </head>
     <body>
-        <header>
-            <img src="./assets/images/logo.svg" alt="Logo" />
-        </header>
+        <div class="container">
+            <header>
+                <img id="logo" src="./assets/images/logo.svg" alt="Logo" />
+            </header>
 
-        <main>
-            <h1>We are launching soon!</h1>
+            <main>
+                <h1>We are launching <span>soon!</span></h1>
 
-            <p>Subscribe and get notified</p>
+                <p class="subscribe">Subscribe and get notified</p>
 
-            <form id="form">
-                <input
-                    id="email"
-                    type="email"
-                    required
-                    placeholder="Your email address"
+                <form id="form">
+                    <input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="Your email address..."
+                    />
+
+                    <button type="submit">Notify Me</button>
+                </form>
+
+                <img
+                    id="illustration"
+                    src="./assets/images/illustration-dashboard.png"
+                    alt="illustration"
                 />
+            </main>
 
-                <button type="submit">Notify Me</button>
-            </form>
+            <footer>
+                <div id="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    <small>&copy; Copyright Ping. All rights reserved.</small>
+                </p>
 
-            <img
-                src="./assets/images/illustration-dashboard.png"
-                alt="illustration"
-            />
-        </main>
-
-        <footer>
-            <div id="icons">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-            <p><small>&copy; Copyright Ping. All rights reserved.</small></p>
-
-            <p class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by <a href="#">Your Name Here</a>.
-            </p>
-        </footer>
+                <p class="attribution">
+                    Challenge by
+                    <a
+                        href="https://www.frontendmentor.io?ref=challenge"
+                        target="_blank"
+                        >Frontend Mentor</a
+                    >. Coded by <a href="https://mudee.carrd.co">Mudi</a>.
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
