@@ -41,13 +41,17 @@
 
                 <p class="subscribe">Subscribe and get notified</p>
 
-                <form id="form">
-                    <input
-                        id="email"
-                        type="email"
-                        required
-                        placeholder="Your email address..."
-                    />
+                <form id="form" novalidate>
+                    <div class="input-group">
+                        <input
+                            id="email"
+                            type="email"
+                            required
+                            placeholder="Your email address..."
+                        />
+
+                        <p id="error"></p>
+                    </div>
 
                     <button type="submit">Notify Me</button>
                 </form>
@@ -86,4 +90,6 @@
             </footer>
         </div>
     </body>
+
+    <script src="index.js"></script>
 </html>

@@ -97,12 +97,30 @@ button {
     font-family: 'Libre Franklin', sans-serif;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#error {
+    font-size: 12px;
+    color: #ff5263;
+    font-style: italic;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
 input {
     border: 1px solid #c2d3ff;
 }
 
 input::placeholder {
     color: #c2d3ff;
+}
+
+input:invalid {
+    border: 1px solid #ff5263;
 }
 
 button {
@@ -127,14 +145,20 @@ button:active {
 @media screen and (min-width: 641px) {
     form {
         flex-direction: row;
+        align-items: start;
     }
 
-    input {
+    .input-group {
         width: 70%;
     }
 
     button {
         width: 30%;
+    }
+
+    #error {
+        margin: 0.5em 1.5rem;
+        align-self: start;
     }
 }
 
@@ -150,8 +174,6 @@ button:active {
         margin: 3em 0;
     }
 }
-
-/* Light Red: #ff5263 */
 
 /* Footer */
 #icons {
