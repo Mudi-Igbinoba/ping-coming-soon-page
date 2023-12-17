@@ -109,6 +109,7 @@ button {
     justify-content: center;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
+    display: none;
 }
 
 input {
@@ -119,7 +120,7 @@ input::placeholder {
     color: #c2d3ff;
 }
 
-input:invalid {
+input.invalid {
     border: 1px solid #ff5263;
 }
 
